@@ -40,9 +40,7 @@ explore: flights {}
 
 explore: human {}
 
-
-
-
+explore: orders {}
 
 explore: incremental_pdts_test {}
 
@@ -55,14 +53,6 @@ explore: inventory_items {
     relationship: many_to_one
   }
 }
-
-
-
-
-
-
-
-
 
 
 explore: order_status_vijaya {}
