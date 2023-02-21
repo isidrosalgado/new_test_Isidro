@@ -39,6 +39,18 @@ view: orders {
     {% endif %};;
   }
 
+  dimension: sale_price {
+    type: number
+    sql: ${TABLE}.sale_price ;;
+    html: {% if value < 25 %}
+      <p style="color: black; background-color: #FF8168; font-size:100%; text-align:center">{{ "Low cost level" }}</p>
+    {% elsif value > 65  %}
+      <p style="color: black; background-color: #e84853; font-size:100%; text-align:center">{{ "High cost Level" }}</p>
+    {% else %}
+      <p style="color: black; background-color: #E8710A; font-size:100%; text-align:center">{{ "Normal cost level" }}</p>
+    {% endif %} ;;
+  }
+
   dimension_group: created {
     type: time
     timeframes: [
