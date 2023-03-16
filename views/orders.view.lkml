@@ -41,6 +41,9 @@ view: orders {
 
 
 
+
+
+
   dimension_group: created {
     type: time
     timeframes: [
@@ -54,6 +57,8 @@ view: orders {
     ]
     sql: ${TABLE}.created_at ;;
   }
+
+
 
   dimension: status {
     type: string

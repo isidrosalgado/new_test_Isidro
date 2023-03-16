@@ -96,6 +96,8 @@ explore: sindhu {
 
 explore: test {}
 
+explore: order_items {}
+
 explore: users {}
 
 explore: user_data {
